@@ -1,0 +1,45 @@
+### John Rinon ###
+
+
+def sqr(i):
+    y =  i * i
+    print (y)
+    
+
+def ctof(c):
+    f = c * 9 / 5 + 32
+    print (f)
+    
+def eoro(n):
+    if (n % 2) != 0:
+         print ("%d is an odd number" %n)
+    else:
+        print ("%d is an even number" %n)
+        
+def palindrome (number):
+    reverse = 0
+    temp = number
+    
+    while(temp > 0):
+        Reminder = temp % 10
+        reverse = (reverse * 10) + Reminder
+        temp = temp //10
+       
+    if reverse == number:
+        print ("%d is a palindrome" %number)
+    else:
+        print ("%d is not a palindrome" %number)
+
+
+### source: https://www.tutorialgateway.org/palindrome-program-in-python/ ###
+
+
+def letters (string):
+    vowels=0
+    for i in string:
+      if(i=='a' or i=='e' or i=='i' or i=='o' or i=='u' or i=='A' or i=='E' or i=='I' or i=='O' or i=='U'):
+            vowels=vowels+1
+    print("Number of vowels is: %d" %vowels)
+   
+
+### sources: https://www.sanfoundry.com/python-program-count-number-vowels-string/ ###
